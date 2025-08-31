@@ -1,3 +1,4 @@
+
 {
   "name": "evpfrontend",
   "private": true,
@@ -5,9 +6,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build": "react-scripts build",
+  "postinstall": "npm rebuild rollup"
   },
   "dependencies": {
     "chart.js": "^4.5.0",
